@@ -1,0 +1,36 @@
+<?php
+/*
+ * @author Vladislav Lyshenko <vladdnepr1989@gmail.com>
+ */
+
+use App\Advice;
+use App\Walker;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+while (false !== ($line = fgets(STDIN))) {
+    $line = trim($line);
+
+    if (is_numeric($line)) {
+        $n = intval($line);
+
+        if ($n <= 0) {
+            break;
+        }
+
+        $walker = new Walker();
+
+        for ($i = 0; $i < $n; $i++) {
+            $walker->addAdvice(new Advice(trim(fgets(STDIN))));
+        }
+
+        $walker->run();
+
+        echo sprintf(
+            "%.5f %.5f %.5f\n",
+            $walker->getAvgX(),
+            $walker->getAvgY(),
+            $walker->getDistance()
+        );
+    }
+}

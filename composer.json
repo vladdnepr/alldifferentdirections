@@ -1,0 +1,19 @@
+{
+    "name": "vladdnepr/alldifferentdirections",
+    "type": "project",
+    "require-dev": {
+        "php": "^7.2.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "license": "mit",
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    },
+    "authors": [
+        {
+            "name": "Vladislav Lyshenko",
+            "email": "vladdnepr1989@gmail.com"
+        }
+    ],
+    "require": {}
+}
