@@ -20,4 +20,4 @@ If you walk through a big city and try to find your way around, you might try as
 
 or 
 
-``cat ./data.in | php console.php``
+``cat ./data.in | php bin/console``

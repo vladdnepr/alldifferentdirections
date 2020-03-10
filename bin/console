@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 /*
  * @author Vladislav Lyshenko <vladdnepr1989@gmail.com>
@@ -6,7 +7,7 @@
 use App\Advice;
 use App\Walker;
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 while (false !== ($line = fgets(STDIN))) {
     $line = trim($line);

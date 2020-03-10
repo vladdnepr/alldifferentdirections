@@ -1,2 +1,2 @@
 run:
-	cat ./data.in | php console.php
+	cat ./data.in | php bin/console

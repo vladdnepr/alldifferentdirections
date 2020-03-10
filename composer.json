@@ -1,8 +1,10 @@
 {
     "name": "vladdnepr/alldifferentdirections",
     "type": "project",
+    "require": {
+        "php": "^7.2.0"
+    },
     "require-dev": {
-        "php": "^7.2.0",
         "phpunit/phpunit": "^8.5"
     },
     "license": "mit",
@@ -14,6 +16,5 @@
             "name": "Vladislav Lyshenko",
             "email": "vladdnepr1989@gmail.com"
         }
-    ],
-    "require": {}
+    ]
 }
